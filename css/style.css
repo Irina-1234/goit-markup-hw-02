@@ -1,6 +1,16 @@
+
+:root {
+    --fon-color: #E5E5E5;
+    --text-color: #212121;
+    --lilte-text-color: #757575;
+    --baner-color: #2F303A;
+    --bt-color: #FFFFFF;
+    --accent-color: #2196F3;
+
+}
 body{
     font-family: "Roboto", Raleway;
-    color: #E5E5E5;
+    color: var(--fon-color)
 }
 
 .list {
@@ -12,10 +22,131 @@ body{
 }
 
 /* ------------Header---------- */
+.header-logo {
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color)
+}
+.logo-color {
+    font-family: "Raleway";
+    color: #000000;
+}
+
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--text-color)
+}
+.header-mail,
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.header-link:hover,
+.header-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus,
+.link-footer:hover,
+.link-footer:focus {
+    color: var(--accent-color);
+}
+
+/* ---------------section-Baner----------------- */
+.baner-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.baner {
+    background-color: gray;
+}
+.baner-bt {
+    font-size: 16px;
+    line-height: 1.85;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--bt-color);
+}
+/* ----------------section-About------------------- */
+.about-item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.about-item-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--lilte-text-color);
+}
+
+/* ---------------------Work------------------------ */
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+
+/* -------------------Hero---------------------- */
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+.hero-item-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+.hero-item-profession {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--lilte-text-color);
+}
+/* -------------Footer------------------- */
+.footer-address {
+    font-style: normal;
+ }
+.footer-item {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--fon-color);
+}
+
+.link-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--lilte-text-color);
 }
